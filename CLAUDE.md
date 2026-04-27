@@ -86,6 +86,28 @@
 
 ---
 
+## GitHub 푸시 원칙
+
+리포트 생성 또는 코드 변경이 발생하면 **즉시 자동으로 GitHub에 푸시**한다.
+
+```bash
+# 리포트 생성 후
+git add reports/YYYYMMDD_교집합리포트.md
+git commit -m "report: YYYY-MM-DD 교집합 리포트"
+git push origin master
+
+# 코드/설정 변경 후
+git add .
+git commit -m "update: [변경 내용 한 줄 요약]"
+git push origin master
+```
+
+- 원격 저장소: `https://github.com/pwman111-debuge/gyojip-maemae`
+- 브랜치: `master`
+- push 실패 시 원인 진단 후 재시도 (force push 금지)
+
+---
+
 ## 운영 원칙
 
 - 포트폴리오분석 추천 + 눌림목 건강도 S/A인 종목만 진입 권고
